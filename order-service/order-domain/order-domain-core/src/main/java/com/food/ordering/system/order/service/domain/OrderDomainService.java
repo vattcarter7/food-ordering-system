@@ -9,7 +9,8 @@ import com.food.ordering.system.order.service.domain.event.OrderPaidEvent;
 import java.util.List;
 
 public interface OrderDomainService {
-    OrderCreatedEvent validateAndInitialOrder(Order order, Restaurant restaurant);
+
+    OrderCreatedEvent validateAndInitiateOrder(Order order, Restaurant restaurant);
 
     OrderPaidEvent payOrder(Order order);
 
